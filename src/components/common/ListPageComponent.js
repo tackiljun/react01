@@ -1,11 +1,13 @@
 
 
+//////////////////////////////////////////////////////////////////////////////////////////////
 const ListPageComponent = ({movePage, start, end, prev, next, pageNums, page}) => {
 
     const handleClickPage = (pageNum) => {
         movePage(pageNum)
     }
 
+//////////////////////////////////////////////////////////////////////////////////////////////    
     return ( 
 
         <div className="flex m-4 p-2 justify-center">
@@ -38,6 +40,7 @@ const ListPageComponent = ({movePage, start, end, prev, next, pageNums, page}) =
         </div>
 
      );
+     
 }
  
 export default ListPageComponent;
