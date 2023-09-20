@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { requestLogin } from "../../reducers/loginSlice";
-//import { getAccessToken, getUserEmail } from "../../api/kakaoAPI";
+import { getAccessToken, getUserEmail } from "../../api/kakaoAPI";
 
 
 const KakaoRedirectPage = () => {
