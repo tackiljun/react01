@@ -3,7 +3,7 @@ import BasicLayout from "../layouts/BasicLayout";
 
 const MainPage = () => {
 
-    console.log("--------------- MAIN ---------------")
+    console.log("---------- MAIN ----------")
 
     return ( 
 
