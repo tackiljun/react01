@@ -1,12 +1,14 @@
 import axios from "axios"
 
 
+///////////////////////////////////////////////////////////////////////////////
 const REST_KEY= '071d01b9d7104c6c9277e10ed51b5180'
 const REDIRECT_URI= 'http://localhost:3000/member/kakao'
 // 엑세스 코드 요청 (토큰 받기).
 const AUTH_TOKEN_URL="https://kauth.kakao.com/oauth/token"
 
 
+///////////////////////////////////////////////////////////////////////////////
 export const getAccessToken = async (authCode) => {
 
     // header 타입.
@@ -35,10 +37,12 @@ export const getAccessToken = async (authCode) => {
 }
 
 
+///////////////////////////////////////////////////////////////////////////////
 // 사용자 정보 가져오기.
 const KAKAO_USER = "https://kapi.kakao.com/v2/user/me"
 
 
+///////////////////////////////////////////////////////////////////////////////
 export const getUserEmail = async (accessToken) => {
 
     // header 타입.
