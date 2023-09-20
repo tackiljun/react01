@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react"
 
 
+///////////////////////////////////////////////////////////////////////////
 const ListSearchComponent = ({queryObj, moveSearch}) => {
 
     // setTimeout(() => {
     //     moveSearch('t', '1')
     // }, 2000)
 
-    //console.log("--------------------SearchComponent--------------------")
+    // console.log("----------SearchComponent----------")
     // console.log(queryObj)
     
     const [searchObj, setSearchObj] = useState({type:'', keyword:''})
@@ -20,6 +21,7 @@ const ListSearchComponent = ({queryObj, moveSearch}) => {
 
     }, [queryObj])
 
+///////////////////////////////////////////////////////////////////////////    
     return ( 
 
         <div className="m-4 p-4 bg-blue-200 border-2">
@@ -44,8 +46,7 @@ const ListSearchComponent = ({queryObj, moveSearch}) => {
             value={searchObj.keyword}
             onChange={ e => {
                 searchObj.keyword = e.target.value
-                setSearchObj({...searchObj})
-            }}>
+                setSearchObj({...searchObj})}}>
             </input>
 
             <button className="m-2 p-2 bg-blue-300 border-2"
