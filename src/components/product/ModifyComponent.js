@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react"
 import { deleteProduct, getProduct, putProduct } from "../../api/productAPI"
 
+
+////////////////////////////////////////////////////////////////////////////////////////////
 const initState = {
     pno: 0,
     pname: "",
@@ -10,36 +12,30 @@ const initState = {
 }
 
 
+////////////////////////////////////////////////////////////////////////////////////////////
 const ModifyComponent = ({pno, moveList, moveRead}) => {
 
     const fileRef = useRef()
     const [product, setProduct] = useState(initState)
 
     useEffect(() => {
-
         getProduct(pno).then(data => {
             setProduct(data)
         })
-
     }, [pno])
 
     const handleClickDelete = () => {
-
         deleteProduct(pno).then(data => {
             alert("상품이 삭제되었습니다.....")
         })
-
     }
 
     const handleChange = (e) => {
-
         product[e.target.name] = e.target.value
         setProduct({...product})
-
     }
 
     const handleClickModify = () => {
-
         const formData = new FormData();
 
         formData.append("pno", product.pno)
@@ -66,18 +62,16 @@ const ModifyComponent = ({pno, moveList, moveRead}) => {
             alert("수정되었습니다.....")
             moveRead(pno)
         })
-
     }
 
     const handleClickDelImg = (fname) => {
-
         const newArr = product.images.filter(ele => ele !== fname)
 
         product.images = newArr
         setProduct({...product})
-
     }
 
+////////////////////////////////////////////////////////////////////////////////////////////
     return ( 
 
         <div className="">
@@ -157,6 +151,7 @@ const ModifyComponent = ({pno, moveList, moveRead}) => {
         </div>
 
      );
+
 }
  
 export default ModifyComponent;
