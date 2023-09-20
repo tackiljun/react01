@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 
 
+/////////////////////////////////////////////////////////////////////////
 const TodoList = () => {
 
     // obj가 배열일 것 같아.
@@ -8,6 +9,7 @@ const TodoList = () => {
 
     console.log("todo list", todoArr)
 
+/////////////////////////////////////////////////////////////////////////
     return ( 
 
         <div>
@@ -17,6 +19,7 @@ const TodoList = () => {
         </div>
 
      );
+     
 }
  
 export default TodoList;

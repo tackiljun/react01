@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux"
 import { addTodo } from "../../reducers/todoSlice"
 
 
+///////////////////////////////////////////////////////
 const TodoInput = () => {
 
     const [text, setText] = useState('')
@@ -12,6 +13,7 @@ const TodoInput = () => {
         dispatch(addTodo(text))
     }
 
+///////////////////////////////////////////////////////
     return ( 
 
         <div>
@@ -30,6 +32,7 @@ const TodoInput = () => {
         </div>
 
      );
+     
 }
  
 export default TodoInput;
