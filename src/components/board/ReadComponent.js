@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { getOne } from "../../api/boardAPI"
 
 
+////////////////////////////////////////////////////////////////////////////////////////
 const initState = {
     bno:0,
     title:'',
@@ -12,6 +13,7 @@ const initState = {
 }
 
 
+////////////////////////////////////////////////////////////////////////////////////////
 const ReadComponent = ({bno}) => {
 
     const [board, setBoard] = useState(initState)
@@ -22,6 +24,7 @@ const ReadComponent = ({bno}) => {
         })
     }, [bno])
 
+////////////////////////////////////////////////////////////////////////////////////////    
     return ( 
 
         <table className="min-w-[1280px] ml-auto mr-auto">
@@ -46,12 +49,18 @@ const ReadComponent = ({bno}) => {
                 <tr
                 className="text-center h-10 bg-blue-200 border-2"
                 key={bno}>               
-                    <td className="w-10 border-2 ">{board.bno}</td>
-                    <td className="w-96 border-2 hover:underline hover:cursor-pointer">
+                    <td className="w-10 border-2 ">
+                        {board.bno}
+                    </td>
+                    <td className="w-96 border-2 hover:underline hover:cursor-pointer">                        
                         {board.title}&nbsp;&nbsp;
                     </td>
-                    <td className="w-10 border-2 ">{board.writer}</td>
-                    <td className="w-10 border-2 ">{board.regDate}</td>
+                    <td className="w-10 border-2 ">
+                        {board.writer}
+                    </td>
+                    <td className="w-10 border-2 ">
+                        {board.regDate}
+                    </td>
                 </tr>
             </tbody>               
         </table>
@@ -75,6 +84,7 @@ const ReadComponent = ({bno}) => {
         // </div>
 
      );
+     
 }
  
 export default ReadComponent;
