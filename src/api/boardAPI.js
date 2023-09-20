@@ -1,6 +1,8 @@
 import axios from "axios"
 import { createSearchParams } from "react-router-dom"
 
+
+//////////////////////////////////////////////////////////////////////////////////////
 export const getList = async (queryObj) => {
 
     const queryString = createSearchParams(queryObj).toString();
@@ -12,6 +14,7 @@ export const getList = async (queryObj) => {
 }
 
 
+//////////////////////////////////////////////////////////////////////////////////////
 export const getOne = async (bno) => {
 
     const res = await axios.get(`http://localhost:8080/api/board/${bno}`)
