@@ -3,6 +3,8 @@ import ReplyInput from "./ReplyInput"
 import ReplyList from "./ReplyList"
 import ReplyRead from "./ReplyRead"
 
+
+/////////////////////////////////////////////////////////////////////////////////////////////
 // 상태값 초기화.
 const initState = {
     bno: 0,
@@ -12,6 +14,8 @@ const initState = {
     current:0
 }
 
+
+/////////////////////////////////////////////////////////////////////////////////////////////
 // bno 1개가 propertities로 내려온다.
 const ReplyWrapper = ({bno}) => {
 
@@ -36,13 +40,11 @@ const ReplyWrapper = ({bno}) => {
 
     // page를 바꿔주는 기능 설정 num 을 받아서 변경.
     const movePage =  (num) => {
-
         console.log("num: " + num)
         data.page = num
         data.last=false
         data.refresh = !data.refresh
         setData({...data})
-        
     }
 
     const refreshLast = () => {
@@ -65,6 +67,7 @@ const ReplyWrapper = ({bno}) => {
         setData({...data})
     }
 
+/////////////////////////////////////////////////////////////////////////////////////////////
     return ( 
 
         <div>
@@ -80,6 +83,7 @@ const ReplyWrapper = ({bno}) => {
         </div>
 
      );
+     
 }
  
 export default ReplyWrapper;
