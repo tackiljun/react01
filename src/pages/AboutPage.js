@@ -7,7 +7,7 @@ import BasicLayout from "../layouts/BasicLayout";
 
 const AboutPage = () => {
 
-    //console.log("--------------- ABOUT ---------------")
+    console.log("---------- ABOUT ----------")
     const {loginInfo} = useCustomLogin()
 
     return ( 
