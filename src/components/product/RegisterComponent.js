@@ -2,6 +2,7 @@ import { useRef, useState } from "react"
 import { postProduct } from "../../api/productAPI"
 
 
+//////////////////////////////////////////////////////////////////////
 const initState = {
     pname:'Ice Americano',
     pdesc:'Coffee.....',
@@ -9,6 +10,7 @@ const initState = {
 }
 
 
+//////////////////////////////////////////////////////////////////////
 const RegisterComponent = ({moveList}) => {
 
     const fileRef = useRef()
@@ -50,6 +52,7 @@ const RegisterComponent = ({moveList}) => {
         fileRef.current.value = ''
     }
 
+//////////////////////////////////////////////////////////////////////
     return ( 
 
         <div className="m-2 p-2 ">
@@ -103,6 +106,7 @@ const RegisterComponent = ({moveList}) => {
         </div>
 
      );
+     
 }
  
 export default RegisterComponent;
