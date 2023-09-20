@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { useDispatch } from "react-redux"
 import { useSelector } from "react-redux"
 import { getProduct } from "../../api/productAPI"
+import { addCartThunk } from "../../reducers/cartSlice"
 
 const initState = {
     pno: 0,
