@@ -3,6 +3,7 @@ import ListPageComponent from "../common/ListPageComponent"
 import { getList } from "../../api/boardAPI"
 
 
+////////////////////////////////////////////////////////////////////////////////////////////////
 const initState = {
     dtoList:[],
     end:0,
@@ -16,6 +17,7 @@ const initState = {
 }
 
 
+////////////////////////////////////////////////////////////////////////////////////////////////
 const ListComponent = ({queryObj, movePage, moveRead}) => {
 
     const [listData, setListData] = useState(initState)
@@ -25,13 +27,14 @@ const ListComponent = ({queryObj, movePage, moveRead}) => {
     useEffect(() => {
 
         getList(queryObj).then(data => {
-            //console.log("==============================")
+            console.log("====================")
             console.log(data)
             setListData({...data})
         })
 
     }, [queryObj])
 
+////////////////////////////////////////////////////////////////////////////////////////////////    
     return ( 
 
         <div>
@@ -66,12 +69,18 @@ const ListComponent = ({queryObj, movePage, moveRead}) => {
                         className="text-center h-10 bg-blue-200 border-2"
                         key={bno}
                         onClick={() => moveRead(bno)}>               
-                            <td className="w-10 border-2 ">{bno}</td>
+                            <td className="w-10 border-2 ">
+                                {bno}
+                            </td>
                             <td className="w-96 border-2 hover:underline hover:cursor-pointer">
                                 {title}&nbsp;&nbsp;[{replyCount}]
                             </td>
-                            <td className="w-10 border-2 ">{writer}</td>
-                            <td className="w-10 border-2 ">{regDate}</td>
+                            <td className="w-10 border-2 ">
+                                {writer}
+                            </td>
+                            <td className="w-10 border-2 ">
+                                {regDate}
+                            </td>
                         </tr>
                         )}
                     </tbody>               
@@ -82,6 +91,7 @@ const ListComponent = ({queryObj, movePage, moveRead}) => {
         </div>
 
      );
+     
 }
  
 export default ListComponent;
