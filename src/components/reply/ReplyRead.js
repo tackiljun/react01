@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react"
+import { deleteReply, getReply } from "../../api/repliesAPI"
 
 const initState = {
     rno:0,
