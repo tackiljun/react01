@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { postReply } from "../../api/repliesAPI";
 
+
+//////////////////////////////////////////////////////////////
 const initState = {
     bno:0,
     replyText:'',
@@ -9,6 +11,7 @@ const initState = {
 }
 
 
+//////////////////////////////////////////////////////////////
 const ReplyInput = ({bno, refreshLast}) => {
 
     const [reply, setReply] = useState({...initState})
@@ -19,7 +22,6 @@ const ReplyInput = ({bno, refreshLast}) => {
     }
 
     const handleClickRegister = (e) => {
-
         reply.bno = bno
 
         // {result:223}
@@ -34,9 +36,9 @@ const ReplyInput = ({bno, refreshLast}) => {
             setReply({...initState})
 
         })
-        
     }
 
+//////////////////////////////////////////////////////////////
     return ( 
 
         <div className="m-auto w-1/5 bg-blue-200 border-2">
@@ -66,6 +68,7 @@ const ReplyInput = ({bno, refreshLast}) => {
         </div>
 
      );
+     
 }
  
 export default ReplyInput;
