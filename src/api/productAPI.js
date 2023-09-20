@@ -3,6 +3,7 @@ import { createSearchParams } from "react-router-dom"
 import jwtAxios from "../util/jwtUtil";
 
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
 export const postProduct = async (formData) => {
 
     const header = {
@@ -18,6 +19,8 @@ export const postProduct = async (formData) => {
 
 }
 
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
 export const getList = async (queryObj) => {
 
     const queryString = createSearchParams(queryObj).toString();
@@ -30,6 +33,7 @@ export const getList = async (queryObj) => {
 }
 
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
 export const getProduct = async (pno) => {
 
     //const res = await axios.get(`http://localhost:8080/api/products/${pno}`)
@@ -40,6 +44,7 @@ export const getProduct = async (pno) => {
 }
 
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
 export const deleteProduct = async (pno) => {
 
     //const res = await axios.delete(`http://localhost:8080/api/products/${pno}`)
@@ -50,6 +55,7 @@ export const deleteProduct = async (pno) => {
 }
 
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
 export const putProduct = async (formData) => {
 
     const header = {
