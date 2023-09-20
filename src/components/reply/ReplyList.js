@@ -2,6 +2,8 @@ import { useEffect, useState } from "react"
 import { getRepliesOfBoard } from "../../api/repliesAPI"
 import ListPageComponent from "../common/ListPageComponent"
 
+
+////////////////////////////////////////////////////////////////////////////////////////////////
 const initState = {
     dtoList:[],
     end:0,
@@ -15,6 +17,7 @@ const initState = {
 }
 
 
+////////////////////////////////////////////////////////////////////////////////////////////////
 const ReplyList = ({bno, page, last, refresh, movePage, changeCurrent}) => {
 
     console.log("Reply List..... bno " + bno)
@@ -42,6 +45,7 @@ const ReplyList = ({bno, page, last, refresh, movePage, changeCurrent}) => {
 
     }, [bno, page, refresh, last])
 
+////////////////////////////////////////////////////////////////////////////////////////////////
     return ( 
 
         <div className="m-auto">
@@ -76,7 +80,7 @@ const ReplyList = ({bno, page, last, refresh, movePage, changeCurrent}) => {
                         key={rno}
                         onClick={() => changeCurrent(rno)}>               
                             <td className="w-10 border-2 ">{rno}</td>
-                            <td className="w-96 border-2 hover:underline hover:cursor-pointer">
+                            <td className="w-96 border-2 hover:underline hover:cursor-pointer">                                
                                 {replyText}&nbsp;&nbsp;
                             </td>
                             <td className="w-10 border-2 ">{replyer}</td>
@@ -90,6 +94,7 @@ const ReplyList = ({bno, page, last, refresh, movePage, changeCurrent}) => {
         </div>
 
      );
+     
 }
  
 export default ReplyList;
