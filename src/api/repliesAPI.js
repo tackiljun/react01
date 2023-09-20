@@ -1,6 +1,7 @@
 import axios from "axios"
 
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
 export const getRepliesOfBoard = async (bno, page = 1, last = false) => {
 
     const res = await axios.get(`http://localhost:8080/api/replies/${bno}/list?page=${page}&last=${last}`)
@@ -10,6 +11,7 @@ export const getRepliesOfBoard = async (bno, page = 1, last = false) => {
 }
 
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
 export const postReply = async (reply) => {
 
     const res = await axios.post('http://localhost:8080/api/replies/' , reply)
@@ -19,6 +21,7 @@ export const postReply = async (reply) => {
 }
 
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
 export const getReply = async (rno) => {
 
     const res = await axios.get(`http://localhost:8080/api/replies/${rno}`)
@@ -28,6 +31,7 @@ export const getReply = async (rno) => {
 }
 
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
 export const deleteReply = async (rno) => {
 
     const res = await axios.delete(`http://localhost:8080/api/replies/${rno}`)
@@ -37,6 +41,7 @@ export const deleteReply = async (rno) => {
 }
 
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
 export const putReply = async (reply) => {
 
     const res = await axios.put(`http://localhost:8080/api/replies/${reply.rno}`, reply)
