@@ -4,6 +4,7 @@ import { getList } from "../../api/boardAPI"
 import { createSearchParams } from "react-router-dom"
 
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
 const initState = {
     dtoList:[],
     end:0,
@@ -17,6 +18,7 @@ const initState = {
 }
 
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
 const ListComponent = ({queryObj, movePage, moveRead}) => {
 
     const [listData, setListData] = useState(initState)
@@ -35,6 +37,7 @@ const ListComponent = ({queryObj, movePage, moveRead}) => {
 
     }, [queryObj])
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
     return ( 
 
         <div className="bg-sb-01 text-2xl">
@@ -42,7 +45,8 @@ const ListComponent = ({queryObj, movePage, moveRead}) => {
                 <ul className="flex flex-wrap container justify-center">
                     {listData.dtoList.map(dto => 
                         <li
-                        className="w-1/6 h-[320px] bg-blue-200 m-4 p-2 rounded-md shadow-lg hover:cursor-pointer"
+                        className="w-1/6 h-[320px] bg-blue-200 m-4 p-2 
+                        rounded-md shadow-lg hover:cursor-pointer"
                         key={dto.pno}
                         onClick={() => moveRead(dto.pno)}>
                             <div>
@@ -66,6 +70,7 @@ const ListComponent = ({queryObj, movePage, moveRead}) => {
         </div>
 
      );
+     
 }
  
 export default ListComponent;
