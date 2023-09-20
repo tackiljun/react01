@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux"
 import { Link, useNavigate } from "react-router-dom"
 import CartNav from "./CartNav"
+import { requestLogout } from "../../reducers/loginSlice"
 
 const LoginNav = () => {
     
