@@ -3,6 +3,8 @@ import { useDispatch } from "react-redux"
 import { useSelector } from "react-redux"
 import { postLoginThunk } from "../../reducers/loginSlice"
 
+
+//////////////////////////////////////////////////////////////////////////////////////
 const initState = {
     email:'user@aaa.com',
     pw:'1111'
@@ -10,6 +12,7 @@ const initState = {
 }
 
 
+//////////////////////////////////////////////////////////////////////////////////////
 const LoginComponent = () => {
 
     const loginState = useSelector(state => state.login)
@@ -22,6 +25,7 @@ const LoginComponent = () => {
 
     console.log("ERRORMSG: " + errorMsg)
 
+//////////////////////////////////////////////////////////////////////////////////////
     return ( 
 
         <div>
@@ -59,11 +63,10 @@ const LoginComponent = () => {
                     LOGIN
                 </button>
             </div>
-            <div>
-            </div>
         </div>
 
      );
+
 }
  
 export default LoginComponent;
