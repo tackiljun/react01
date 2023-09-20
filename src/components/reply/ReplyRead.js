@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
 import { deleteReply, getReply } from "../../api/repliesAPI"
 
+
+////////////////////////////////////////////////////////////////////////////////////////////////
 const initState = {
     rno:0,
     bno:0,
@@ -10,9 +12,10 @@ const initState = {
 }
 
 
+////////////////////////////////////////////////////////////////////////////////////////////////
 const ReplyRead = ({rno, cancleRead, refreshPage}) => {
 
-    console.log("ReplyRead.........." + rno)
+    console.log("ReplyRead....." + rno)
 
     const [reply, setReply] = useState(initState)
 
@@ -26,12 +29,10 @@ const ReplyRead = ({rno, cancleRead, refreshPage}) => {
     }, [rno])
 
     const handleClickDelete = () => {
-
         deleteReply(rno).then(data => {
             alert(`${data.result}번 댓글이 삭제되었습니다.....`)
             refreshPage()
         })
-
     }
 
     const handleChange = (e) => {
@@ -50,6 +51,7 @@ const ReplyRead = ({rno, cancleRead, refreshPage}) => {
         return <></>
     }
 
+////////////////////////////////////////////////////////////////////////////////////////////////
     return ( 
 
         <div className="m-auto w-1/4 bg-blue-200 border-2">
@@ -79,6 +81,7 @@ const ReplyRead = ({rno, cancleRead, refreshPage}) => {
         </div>
 
      );
+
 }
  
 export default ReplyRead;
