@@ -1,5 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
 import { postLogin } from "../api/memberAPI"
+import { getCookie, removeCookie, setCookie } from "../util/cookieUtil"
 
 export const postLoginThunk = 
     createAsyncThunk('postLoginThunk', (params) => {
