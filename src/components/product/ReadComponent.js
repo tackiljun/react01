@@ -4,6 +4,8 @@ import { useSelector } from "react-redux"
 import { getProduct } from "../../api/productAPI"
 import { addCartThunk } from "../../reducers/cartSlice"
 
+
+//////////////////////////////////////////////////////////////////////////////////////////////
 const initState = {
     pno: 0,
     pname: "",
@@ -13,6 +15,7 @@ const initState = {
 }
 
 
+//////////////////////////////////////////////////////////////////////////////////////////////
 const ReadComponent = ({pno, moveModify, moveList}) => {
 
     const {email} = useSelector(state => state.login)
@@ -31,6 +34,7 @@ const ReadComponent = ({pno, moveModify, moveList}) => {
 
     }, [pno])
 
+//////////////////////////////////////////////////////////////////////////////////////////////
     return ( 
 
         <div className="m-2 p-2">
@@ -47,7 +51,7 @@ const ReadComponent = ({pno, moveModify, moveList}) => {
                 <ul className="list-none">
                     {product.images.map( (fname, idx) => 
                         <li key={idx}>
-                            <img className="inline-block" src={`http://localhost/${fname}`}/>
+                            <img className="inline-block" src={`http://localhost/${fname}`}/>                            
                         </li>
                     )}
                 </ul>
@@ -75,6 +79,7 @@ const ReadComponent = ({pno, moveModify, moveList}) => {
         </div>
 
      );
+     
 }
  
 export default ReadComponent;
