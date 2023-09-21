@@ -6,6 +6,7 @@ import { requestLogin } from "../../reducers/loginSlice";
 import { getAccessToken, getUserEmail } from "../../api/kakaoAPI";
 
 
+///////////////////////////////////////////////////////////////////////////////////////////
 const KakaoRedirectPage = () => {
 
     const [searchParams] = useSearchParams()
@@ -45,7 +46,8 @@ const KakaoRedirectPage = () => {
         // })
 
     }, [authCode])
-
+    
+///////////////////////////////////////////////////////////////////////////////////////////
     return ( 
         
         <div>
