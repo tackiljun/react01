@@ -3,6 +3,8 @@ import { Link, useNavigate } from "react-router-dom"
 import CartNav from "./CartNav"
 import { requestLogout } from "../../reducers/loginSlice"
 
+
+/////////////////////////////////////////////////////////////////////////////////////////////
 const LoginNav = () => {
     
     const {email, nickname} = useSelector(state => state.login)
@@ -15,7 +17,9 @@ const LoginNav = () => {
     const handleClickLogout = () => {
 
         dispatch(requestLogout())
-        //console.log(email)
+
+        console.log(email)
+
         navigate("/")
 
         console.log("LogoutNav.....")
@@ -32,7 +36,9 @@ const LoginNav = () => {
                 </div>
                 <CartNav></CartNav>
                 <div>
-                    <button className="border-2" onClick={handleClickLogout}>LOGOUT</button>
+                    <button className="border-2" onClick={handleClickLogout}>
+                        LOGOUT
+                    </button>
                 </div>
             </div>
 
@@ -40,6 +46,7 @@ const LoginNav = () => {
         
     }
 
+/////////////////////////////////////////////////////////////////////////////////////////////
     return ( 
         <div>
             <Link to="/member/login">LOGIN</Link>
