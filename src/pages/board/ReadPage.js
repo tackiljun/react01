@@ -3,6 +3,8 @@ import useQueryObj from "../../hooks/useQueryObj"
 import ReadComponent from "../../components/board/ReadComponent"
 import ReplyWrapper from "../../components/reply/ReplyWrapper"
 
+
+//////////////////////////////////////////////////////////////
 const ReadPage = () => {
 
     const {queryObj, moveList} = useQueryObj()
@@ -13,6 +15,7 @@ const ReadPage = () => {
     console.log(useQueryObj)
     console.log("------------------------")
 
+//////////////////////////////////////////////////////////////
     return ( 
 
         <div>
@@ -31,6 +34,7 @@ const ReadPage = () => {
         </div>
 
      );
+     
 }
  
 export default ReadPage;
