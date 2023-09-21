@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { getCartThunk } from "../../reducers/cartSlice"
 
 
+////////////////////////////////////////////////////////////////
 const CartNav = () => {
     
     console.log("Cart Nav..........")
@@ -23,7 +24,8 @@ const CartNav = () => {
         dispatch(getCartThunk(email))
 
     }, [email])
-
+    
+////////////////////////////////////////////////////////////////
     return ( 
         <div className="text-3xl text-red-500">
             CART {items.length}
