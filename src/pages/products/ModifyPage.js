@@ -4,6 +4,7 @@ import useCustomLogin from "../../hooks/useCustomLogin"
 import useQueryObj from "../../hooks/useQueryObj"
 
 
+////////////////////////////////////////////////////////////////////////////////
 const ModifyPage = () => {
 
     const {loginInfo} = useCustomLogin( (nav) => {
@@ -18,6 +19,7 @@ const ModifyPage = () => {
     // setSearch, moveRead, 안에 들어가?
     const {pno} = useParams()
 
+////////////////////////////////////////////////////////////////////////////////
     return ( 
 
         <div>
