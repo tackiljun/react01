@@ -8,10 +8,8 @@ import useQueryObj from "../../hooks/useQueryObj"
 const ModifyPage = () => {
 
     const {loginInfo} = useCustomLogin( (nav) => {
-
         //console.log("function.....")
         nav('.../list')
-
     })
 
     const {queryObj, setSearch, moveRead, moveList, moveModify} = useQueryObj()
