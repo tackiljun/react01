@@ -1,10 +1,12 @@
 import BasicLayout from "../layouts/BasicLayout";
 
 
+//////////////////////////////////////////////////////////////
 const MainPage = () => {
 
     console.log("---------- MAIN ----------")
 
+//////////////////////////////////////////////////////////////
     return ( 
 
         <BasicLayout>
