@@ -7,7 +7,10 @@ import LoadingPage from "../pages/LoadingPage";
 import MyPage from "../pages/MyPage";
 import KakaoRedircetPage from "../pages/member/KakaoRedirectPage";
 
+
+//////////////////////////////////////////////////////////////////////////////////////
 const Loading = <LoadingPage></LoadingPage>
+//////////////////////////////////////////////////////////////////////////////////////
 const Board_Index = lazy(() => import("../pages/board/IndexPage"))
 const Board_List = lazy(() => import("../pages/board/ListPage"))
 const Board_Read = lazy(() => import("../pages/board/ReadPage"))
@@ -21,6 +24,7 @@ const Products_Modify = lazy(() => import("../pages/products/ModifyPage"))
 const Member_Login = lazy(() => import("../pages/member/LoginPage"))
 
 
+//////////////////////////////////////////////////////////////////////////////////////
 const router = createBrowserRouter([
     {
         path:"",
