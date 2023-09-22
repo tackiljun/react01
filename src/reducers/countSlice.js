@@ -1,5 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit"
 
+
+///////////////////////////////////////////////////////////
 // createSlice - 금고역할.
 const countSlice = createSlice({
 
@@ -34,10 +36,11 @@ const countSlice = createSlice({
 })
 
 
+///////////////////////////////////////////////////////////
 // actions내부?????
 export const {inc, dec} = countSlice.actions
-              // └> 외부로 빠지는 애들.
-
-              
+              // └> 외부로 빠지는 애들.              
 // 노출되는 부분.
+
+
 export default countSlice.reducer
