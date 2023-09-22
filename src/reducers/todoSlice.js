@@ -1,5 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit"
 
+
+/////////////////////////////////////////////
 const todoSlice = createSlice({
     name: "todoSlice",
     initialState: ['AAA', 'BBB'],
@@ -9,11 +11,13 @@ const todoSlice = createSlice({
             console.log("TODO.....", state)
 
             return [...state, param.payload]
+            
         }
     }
 })
 
 
+/////////////////////////////////////////////
 export const {addTodo} = todoSlice.actions
 
 
