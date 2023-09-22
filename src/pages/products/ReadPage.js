@@ -4,6 +4,7 @@ import useCustomLogin from "../../hooks/useCustomLogin"
 import useQueryObj from "../../hooks/useQueryObj"
 
 
+////////////////////////////////////////////////////////////////////////////////
 const ReadPage = () => {
 
     const {queryObj, setSearch, moveRead, moveList, moveModify} = useQueryObj()
@@ -17,7 +18,8 @@ const ReadPage = () => {
     console.log(pno)
     console.log(useQueryObj)
     console.log("------------------------")
-
+    
+////////////////////////////////////////////////////////////////////////////////
     return ( 
 
         <div>
