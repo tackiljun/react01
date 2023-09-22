@@ -5,6 +5,7 @@ import loginSlice from "../reducers/loginSlice";
 import cartSlice from "../reducers/cartSlice";
 
 
+///////////////////////////////////////////////
 // 이 함수의 결과물이 스토어.
 export default configureStore({
     reducer : { 
