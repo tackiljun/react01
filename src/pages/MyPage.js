@@ -1,8 +1,10 @@
 import BasicLayout from "../layouts/BasicLayout";
 
 
+/////////////////////////////
 const MyPage = () => {
-
+    
+/////////////////////////////
     return ( 
 
         <BasicLayout>
