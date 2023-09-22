@@ -2,12 +2,15 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
 import { postLogin } from "../api/memberAPI"
 import { getCookie, removeCookie, setCookie } from "../util/cookieUtil"
 
+
+///////////////////////////////////////////////////////////////////////
 export const postLoginThunk = 
     createAsyncThunk('postLoginThunk', (params) => {
         return postLogin(params)
     })
 
 
+///////////////////////////////////////////////////////////////////////
 const loadCookie = () => {
 
     const loginObj = getCookie("login")
@@ -23,6 +26,7 @@ const loadCookie = () => {
 }
 
 
+///////////////////////////////////////////////////////////////////////
 const initState = {
     email: '',
     nickname: '',
@@ -33,6 +37,7 @@ const initState = {
 }
 
 
+///////////////////////////////////////////////////////////////////////
 const loginSlice = createSlice({
     name: 'loginSlice',
     // 함수의 리턴값으로 받을 생각.
@@ -94,10 +99,9 @@ const loginSlice = createSlice({
 })
 
 
+///////////////////////////////////////////////////////////////////////
 export const {requestLogin} = loginSlice.actions
 
-
 export const {requestLogout} = loginSlice.actions
-
 
 export default loginSlice.reducer
