@@ -2,6 +2,7 @@ import ListComponent from "../../components/product/ListComponent"
 import useQueryObj from "../../hooks/useQueryObj"
 
 
+////////////////////////////////////////////////////////////////////
 const ListPage = () => {
 
     const {queryObj, setSearch, moveRead, moveList} = useQueryObj()
@@ -13,7 +14,8 @@ const ListPage = () => {
         setSearch({...queryObj})
 
     }
-
+    
+////////////////////////////////////////////////////////////////////
     return ( 
       
         <div className="text-3xl">
