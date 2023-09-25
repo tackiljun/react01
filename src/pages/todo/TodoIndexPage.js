@@ -1,6 +1,6 @@
 
-const  = () => {
+const TodoIndexPage = () => {
     return (  );
 }
  
-export default ;
+export default TodoIndexPage;
