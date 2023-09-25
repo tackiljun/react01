@@ -1,6 +1,8 @@
 
 const TodoIndexPage = () => {
-    return (  );
+    return ( 
+        <></>
+     );
 }
  
 export default TodoIndexPage;
