@@ -3,8 +3,6 @@ const TodoIndexPage = () => {
     
     return ( 
         <></>
-        
-
      );
 }
  
