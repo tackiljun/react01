@@ -2,9 +2,7 @@
 const TodoIndexPage = () => {
     
     return ( 
-
         <div></div>
-
      );
 }
  
