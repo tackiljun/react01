@@ -2,9 +2,7 @@
 const TodoListPage = () => {
     
     return ( 
-
         <div></div>
-
      );
 }
  
