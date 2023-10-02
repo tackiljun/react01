@@ -7,6 +7,7 @@ const TodoIndexPage = () => {
             <div></div>
         </div>
      );
+     
 }
  
 export default TodoIndexPage;
