@@ -7,7 +7,9 @@ const TodoPage = () => {
             <div>
                 <div></div>
             </div>
-            <div></div>
+            <div>
+                <div></div>
+            </div>
         </div>
      );
      
