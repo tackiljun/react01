@@ -4,7 +4,9 @@ const TodoReadPage = () => {
     
     return ( 
         <div>
-            <div></div>
+            <div>
+                <div></div>
+            </div>
             <div></div>
         </div>
      );
