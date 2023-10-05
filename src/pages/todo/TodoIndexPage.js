@@ -7,7 +7,9 @@ const TodoIndexPage = () => {
             <div>
                 <div></div>
             </div>
-            <div></div>
+            <div>
+                <div></div>
+            </div>
         </div>
      );
      
