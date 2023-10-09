@@ -30,12 +30,12 @@ const ListPageComponent = ({movePage, start, end, prev, next, pageNums, page}) =
                         {/* {num} */}
                     </li>)}
 
-                    {next ? 
+                {next ? 
                     <li 
                     className="m-2 p-2 bg-blue-300 border-2 font-bold hover:cursor-pointer"
                     onClick={() => handleClickPage(end +1)}>
                         NEXT
-                    </li>:<></>}
+                </li>:<></>}
             </ul>
         </div>
 
