@@ -30,8 +30,8 @@ const ListSearchComponent = ({queryObj, moveSearch}) => {
             value={searchObj.type}
             onChange={ e => {
                 searchObj.type = e.target.value
-                setSearchObj({...searchObj})}}
-            >
+                setSearchObj({...searchObj})}}>
+
                 <option value={''}>-----</option>
                 <option value={'t'}>제목</option>
                 <option value={'c'}>내용</option>
