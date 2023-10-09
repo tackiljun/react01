@@ -49,6 +49,7 @@ const ListComponent = ({queryObj, movePage, moveRead}) => {
                             {dto.bno} - {dto.title} - {dto.replyCount} - {dto.regDate}
                         </li>)}
                 </ul> */}
+                
                 <table className="min-w-[1280px] ml-auto mr-auto">
                     <thead>
                         <tr className="h-12 bg-blue-300">
