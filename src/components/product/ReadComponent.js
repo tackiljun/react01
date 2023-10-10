@@ -24,14 +24,12 @@ const ReadComponent = ({pno, moveModify, moveList}) => {
     const [product, setProduct] = useState(initState)
 
     useEffect(() => {
-
         getProduct(pno).then(data => {
             setProduct(data)
         }).catch(e => {
             console.log(e)
             moveList()
         })
-
     }, [pno])
 
 //////////////////////////////////////////////////////////////////////////////////////////////
