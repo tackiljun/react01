@@ -66,6 +66,7 @@ const ListComponent = ({queryObj, movePage, moveRead}) => {
                         </li>)}
                 </ul>
             </div>
+            
             <ListPageComponent movePage={movePage}{...listData}></ListPageComponent>       
         </div>
 
