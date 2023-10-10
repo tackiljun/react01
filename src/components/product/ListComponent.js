@@ -26,7 +26,6 @@ const ListComponent = ({queryObj, movePage, moveRead}) => {
     console.log(createSearchParams(queryObj).toString())
 
     useEffect(() => {
-
         getList(queryObj).then(data => {
 
             console.log("====================")
@@ -34,7 +33,6 @@ const ListComponent = ({queryObj, movePage, moveRead}) => {
             setListData({...data})
 
         })
-
     }, [queryObj])
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -66,7 +64,7 @@ const ListComponent = ({queryObj, movePage, moveRead}) => {
                         </li>)}
                 </ul>
             </div>
-            
+
             <ListPageComponent movePage={movePage}{...listData}></ListPageComponent>       
         </div>
 
