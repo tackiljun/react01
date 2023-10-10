@@ -24,7 +24,6 @@ const RegisterComponent = ({moveList}) => {
     }
 
     const handleClickSave = (e) => {
-        
         const formData = new FormData();
 
         formData.append("pname", product.pname)
@@ -45,7 +44,6 @@ const RegisterComponent = ({moveList}) => {
             alert(`${rno}번 상품이 등록되었습니다.....`)
             moveList()
         }) 
-
     }
 
     const handleClickClear = (e) => {
