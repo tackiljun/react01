@@ -56,6 +56,7 @@ const LoginComponent = () => {
                 onChange={() => {}}>
                 </input>
             </div>
+            
             <div>
                 <button 
                 className="m-2 p-3 border-2 bg-blue-300" 
