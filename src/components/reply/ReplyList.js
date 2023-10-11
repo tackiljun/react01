@@ -26,10 +26,8 @@ const ReplyList = ({bno, page, last, refresh, movePage, changeCurrent}) => {
     const [listData, setListData] = useState(initState)
 
     useEffect(() => {
-
         // 댓글데이터를 가져온다.
         getRepliesOfBoard(bno, page, last).then(data => {
-
             console.log("--------------------")
             console.log(bno)
             console.log("--------------------")
@@ -39,10 +37,9 @@ const ReplyList = ({bno, page, last, refresh, movePage, changeCurrent}) => {
             console.log("--------------------")
             console.log(data)
             console.log("--------------------")
+
             setListData(data)
-
         })  
-
     }, [bno, page, refresh, last])
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
