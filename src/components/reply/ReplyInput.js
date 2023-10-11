@@ -26,7 +26,6 @@ const ReplyInput = ({bno, refreshLast}) => {
 
         // {result:223}
         postReply(reply).then(data => {
-
             console.log(data)
 
             alert(`${data.result}번 댓글이 등록완료` )
@@ -34,7 +33,6 @@ const ReplyInput = ({bno, refreshLast}) => {
             refreshLast()
 
             setReply({...initState})
-
         })
     }
 
