@@ -11,7 +11,6 @@ const useCustomLogin = (fn) => {
     const navigate = useNavigate()
 
     useEffect(() => {
-
         if(fn) {
             if(!loginInfo.email) {
                 fn(navigate)
@@ -24,9 +23,9 @@ const useCustomLogin = (fn) => {
         if(!loginInfo.email) {
             navigate("/member/login")
         }
-
     }, [loginInfo.email])
     
+////////////////////////////////////////////////////////    
     return {loginInfo}
     
 }
