@@ -20,12 +20,10 @@ const ReplyRead = ({rno, cancleRead, refreshPage}) => {
     const [reply, setReply] = useState(initState)
 
     useEffect(() => {
-
         getReply(rno).then(data => {
             console.log(data)
             setReply(data)
         })
-
     }, [rno])
 
     const handleClickDelete = () => {
