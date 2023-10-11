@@ -25,12 +25,10 @@ const ReplyWrapper = ({bno}) => {
     // bno가 props니까 바뀔수있게사용.
     // bno 및 last를 변경해준다.
     useEffect(() => {
-
         data.bno = bno
         data.last =  true
         data.page = 1
         setData({...data})
-
     }, [bno])
 
     const changeCurrent = (rno) => {
