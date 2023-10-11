@@ -7,14 +7,12 @@ const checkNull = (obj) => {
     const result = {}
 
     for(const attr in obj) {
-
         const attrName = attr
         const attrValue = obj[attr]
 
         if(attrValue && attrValue !== 'null') {
             result[attrName] = attrValue
         }
-
     }
 
     return result
@@ -34,7 +32,6 @@ const useQueryObj = () => {
     const size = search.get("size") || 10
     const type = search.get("type")
     const keyword = search.get("keyword")
-
     const queryObj = checkNull({page,size,type,keyword})
 
     const moveList = () => {
