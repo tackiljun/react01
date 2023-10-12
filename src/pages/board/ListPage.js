@@ -39,7 +39,6 @@ const ListPage = () => {
         queryObj.page = 1
         queryObj.type = type
         queryObj.keyword = keyword
-    
         setSearch({...queryObj})
     }
 
