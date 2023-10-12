@@ -17,6 +17,7 @@ const IndexPage = () => {
                     REGISTER
                 </div>
             </div>
+            
             <div className="m-auto bg-blue-100 w-full border-2">
                 <Outlet></Outlet>
             </div>
