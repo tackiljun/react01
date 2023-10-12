@@ -16,13 +16,11 @@ const CartNav = () => {
     
     // 로그인 시 cart개수를 가져오는 함수.
     useEffect(() => {
-
         if(!email) {
             return
         }
         
         dispatch(getCartThunk(email))
-
     }, [email])
     
 ////////////////////////////////////////////////////////////////
