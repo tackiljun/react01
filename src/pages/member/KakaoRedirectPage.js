@@ -19,7 +19,6 @@ const KakaoRedirectPage = () => {
       const navigate = useNavigate()
 
     useEffect(() => {
-
         axios.get(`http://localhost:8080/api/member/kakao?code=${authCode}`).then(res => {
 
             console.log(res.data)
@@ -44,7 +43,6 @@ const KakaoRedirectPage = () => {
         //         console.log("EMAIL: " + email)
         //     })
         // })
-
     }, [authCode])
     
 ///////////////////////////////////////////////////////////////////////////////////////////
