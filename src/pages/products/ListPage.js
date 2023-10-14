@@ -8,11 +8,9 @@ const ListPage = () => {
     const {queryObj, setSearch, moveRead, moveList} = useQueryObj()
 
     const movePage = (num) => {
-  
         console.log("NUM ------------" + num)
         queryObj.page = num
         setSearch({...queryObj})
-
     }
     
 ////////////////////////////////////////////////////////////////////
