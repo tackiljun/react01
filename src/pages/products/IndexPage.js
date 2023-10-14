@@ -13,6 +13,7 @@ const IndexPage = () => {
                 <div className="underline m-2 p-2 font-extrabold border-2">
                     LIST
                 </div>
+                
                 <div className="underline m-2 p-2 font-extrabold border-2">
                     <Link to={'register'}>REGISTER</Link> 
                 </div>
