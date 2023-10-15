@@ -46,17 +46,13 @@ const cartSlice = createSlice({
     extraReducers: (builder) => {
 
         builder.addCase(addCartThunk.fulfilled, (state, action) => {
-
             console.log(action.payload)
-            state.items = action.payload
-
+            state.items = action.payloa
         })
         .addCase(getCartThunk.fulfilled, (state, action) => {
-
             console.log("getCartThunk fullfilled.....")
             console.log(action.payload)
             state.items = action.payload
-
         })
 
     }
