@@ -31,6 +31,7 @@ const countSlice = createSlice({
             console.log("--------------------")
             return {num: state.num - param.payload}
         }
+        
     }
     
 })
