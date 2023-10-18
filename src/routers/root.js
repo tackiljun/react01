@@ -10,6 +10,7 @@ import KakaoRedircetPage from "../pages/member/KakaoRedirectPage";
 
 //////////////////////////////////////////////////////////////////////////////////////
 const Loading = <LoadingPage></LoadingPage>
+
 //////////////////////////////////////////////////////////////////////////////////////
 const Board_Index = lazy(() => import("../pages/board/IndexPage"))
 const Board_List = lazy(() => import("../pages/board/ListPage"))
