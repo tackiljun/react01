@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit"
 
 /////////////////////////////////////////////
 const todoSlice = createSlice({
+
     name: "todoSlice",
     initialState: ['AAA', 'BBB'],
     reducers: {
@@ -14,6 +15,7 @@ const todoSlice = createSlice({
             
         }
     }
+    
 })
 
 
