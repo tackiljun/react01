@@ -8,6 +8,7 @@ import cartSlice from "../reducers/cartSlice";
 ///////////////////////////////////////////////
 // 이 함수의 결과물이 스토어.
 export default configureStore({
+
     reducer : { 
         // 이름?, 값? 추가해.
         counter: countSlice, //reducer setting
@@ -15,4 +16,5 @@ export default configureStore({
         login: loginSlice,
         cart: cartSlice
      }
+     
 })
