@@ -56,7 +56,7 @@ const beforeRes = async(res) => {
 
         return await axios(originalRequest)
     }
-    
+
     return res
 
 }
@@ -101,9 +101,11 @@ const refreshJWT = async () => {
 // 2xx 외의 범위에 있는 상태 코드는 이 함수를 트리거 합니다.
 // 응답 오류가 있는 작업 수행.
 const responseFail  = (err) => {
+
     console.log("response fail..........")
 
     return Promise.reject(err)
+    
 }
 
 
