@@ -35,7 +35,7 @@ const requestFail = (err) => {
     console.log("request fail..........", err)
 
     return Promise.reject(err)
-    
+
 }
 
 
@@ -47,7 +47,6 @@ const beforeRes = async(res) => {
     console.log("2xx Response..........")
 
     if(res.data.error === 'Expired') {
-
         console.log("Access Token has expired")
 
         const newAccessToken = await refreshJWT()
