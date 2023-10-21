@@ -24,7 +24,7 @@ const beforeReq = (config) => {
     config.headers.Authorization = `Bearer ${accessToken}`
 
     return config
-    
+
 }
 
 
@@ -35,6 +35,7 @@ const requestFail = (err) => {
     console.log("request fail..........", err)
 
     return Promise.reject(err)
+    
 }
 
 
