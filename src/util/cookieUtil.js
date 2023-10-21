@@ -13,6 +13,7 @@ const cookies = new Cookies()
 export const setCookie = (cookieName, value, days) => {
 
     const expires = new Date()
+    
     // setUTCDate - 날짜를 조정하는기능.
     expires.setUTCDate(expires.getUTCDate() + days);
 
