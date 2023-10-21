@@ -15,7 +15,7 @@ const beforeReq = (config) => {
 
     console.log("beforeRequest..........", config)
 
-    const {accessToken}  = getCookie("login")
+    const {accessToken} = getCookie("login")
 
     if(!accessToken) {
         throw new Error("NO ACCESS TOKEN")
