@@ -25,9 +25,11 @@ const CartNav = () => {
     
 ////////////////////////////////////////////////////////////////
     return ( 
+
         <div className="text-3xl text-red-500">
             CART {items.length}
         </div>
+        
      );
      
 }
