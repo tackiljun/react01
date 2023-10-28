@@ -34,7 +34,9 @@ const LoginNav = () => {
                 <div>
                     {email} - {nickname}
                 </div>
+                
                 <CartNav></CartNav>
+
                 <div>
                     <button className="border-2" onClick={handleClickLogout}>
                         LOGOUT
