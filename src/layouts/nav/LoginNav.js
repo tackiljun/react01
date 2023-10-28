@@ -28,7 +28,6 @@ const LoginNav = () => {
 
     if(email !== '') {
         return (
-
             <div>
                 <div>
                     {email} - {nickname}
@@ -42,7 +41,6 @@ const LoginNav = () => {
                     </button>
                 </div>
             </div>
-
         )
     }
 
